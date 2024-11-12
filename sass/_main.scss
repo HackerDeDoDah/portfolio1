@@ -1,20 +1,21 @@
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(2,1fr);
-    grid-gap: 10px;
-    justify-items: center;
+    justify-content: space-around;
+    width: 1250px;
     img {
         width: 300px;
-        align-items: center;
+        align-items: left;
+        margin-top: 20px;
         &:hover {
             transition: box-shadow 0.5s ease-in-out;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
     }
     h2 {
-        text-align: center;
-        margin: 0;
+        text-align: left;
+        margin-left: 10px;
     }
 
 }
@@ -23,29 +24,27 @@
 
 .form-container {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    margin-right: 50px;
 }
 
 .contact-form {
     width: 100%;
-    max-width: 700px;
     padding: 20px;
-    border: 1px solid transparent;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.contact-form h2 {
-    margin-top: 0;
-    font-size: 1.5em;
-}
+
 .form-group {
     margin-bottom: 15px;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+#first-name, #last-name {
+    width: 100%;
+    gap: 10px;
 }
 input, textarea {
     width: 100%;
@@ -58,7 +57,7 @@ textarea {
     resize: vertical;
 }
 button {
-    width: 200px;
+    width: 25%;
     padding: 10px;
     background-color: #4CAF50;
     color: #fff;
@@ -69,4 +68,16 @@ button {
 }
 button:hover {
     background-color: #45a049;
+}
+
+.contact-info {
+    text-align: left;
+    margin: 20px;
+    width: 600px;
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1rem;
+    }
 }

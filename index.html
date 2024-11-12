@@ -11,12 +11,12 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="top">
             <div class="hero-container">
                 <div class="hero">
-                    <img src="assets\hero-image.webp" alt="An image of a computer with coding on.">
+                    <img src="assets\hero-image.jpg" alt="An image of a computer with coding on.">
                 </div>
-                <div class="text-container">
+                <div class="text-container click">
                     <h1>My Name is Christopher Day</h1>
                     <h3>I'm a Web Developer</h3>
                 </div>
@@ -24,19 +24,27 @@
         </header>
 
         <aside>
-            <h1 class="click"><a href="index.html"></a><strong>C</strong></h1>
+            <h1 class="click"><a href="index.html#top"><strong>C</strong></a></h1>
             <ul>
                 <li><a href="about.html">About Me</a>
-                <li><a href="potfolio.html">My Portfolio</a>
+                <li><a href="portfolio.html">My Portfolio</a>
                 <li><a href="code.html">Coding Examples</a>
                 <li><a href="scheme.html">SCS Scheme</a>
-                <li><a href="#">Contact Me</a>
+                <li><a href="#form">Contact Me</a>
             </ul>
             <div class="icon-container">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
             </div>
         </aside>
 
@@ -67,39 +75,55 @@
                     <h2>Project 6</h2>
                 </div>
             </div>
-        
+            
             <section class="form-container">
-                <div class="contact-form">
-                    <h2>Get In Touch</h2>
+                <section class="contact-info">
+                    <div class="get">
+                        <h2>Get In Touch</h2>
+                        <p>Please fill out the form and give a short message about your project. We will get back to you as soon as possible.</p>
+                    </div>
+                    <div class="number">
+                        <h2>Or call us</h2>
+                        <p>Call us: <a href="tel:+447394942864">07394 942864</a></p>
+                        <p>Monday - Friday: 8am - 5pm</p>
+                        <p>To arrange a consultation or to discuss ongoing projects, don't hesitate to contact us.</p>
+                    </div>
+                </section>
+                <div class="contact-form" id="form">
                     <form action="/submit_form" method="post">
-                        <div class="form-group">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first_name" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="first-name" name="first_name" placeholder="First Name"required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last_name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
             </section>
         </main>
+        
         <footer>
-
+            <div class="to-top">
+                <a href="#top"><i class="fa-solid fa-arrow-up"></i>
+                <p>Back to Top</p></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Christopher Day 2024</p>
+            </div>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
 </body>
 </html>
