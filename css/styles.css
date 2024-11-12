@@ -12,6 +12,31 @@ aside {
   width: 200px;
   height: 100vh;
 }
+@media (min-width: 280px) {
+  aside {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  aside {
+    width: 560px;
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  aside {
+    width: 750px;
+    width: 100px;
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  aside {
+    width: 970px;
+    width: 200px;
+    display: flex;
+  }
+}
 aside h1 {
   font-size: 6rem;
   border-bottom: 4px solid var(--line-color);
@@ -73,25 +98,77 @@ aside .icon-container a:hover .fa-instagram {
   color: #C13584;
 }
 
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: space-around;
-  width: 1250px;
+:root {
+  --line-color: #538be7;
 }
-.main-grid img {
-  width: 300px;
-  align-items: left;
-  margin-top: 20px;
+
+.main-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
-.main-grid img:hover {
+
+.card {
+  flex-basis: 350px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-in-out;
+}
+.card:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.main-grid h2 {
-  text-align: left;
-  margin-left: 10px;
+.card h2 {
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  width: 1311px;
+  min-height: 600px;
+}
+@media (min-width: 280px) {
+  .main-grid {
+    width: 270px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media (min-width: 576px) {
+  .main-grid {
+    width: 560px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .main-grid {
+    width: 750px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .main-grid {
+    width: 970px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1260px) {
+  .main-grid {
+    width: 1311px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .form-container {
@@ -210,9 +287,7 @@ footer {
 }
 .hero-container .text-container {
   position: absolute;
-  justify-self: center;
-  top: 30%;
-  left: 30%;
+  justify-self: space-around;
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
@@ -256,14 +331,48 @@ footer {
   --line-color: #538be7;
 }
 
+:root {
+  --line-color: #538be7;
+}
+
 .container {
   display: grid;
   grid-template-columns: 200px repeat(3, 1fr);
   grid-template-rows: repeat(3, auto) 100px;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1550px;
   height: 100%;
   grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
+}
+@media (min-width: 280px) {
+  .container {
+    width: 270px;
+    grid-template-columns: 0px 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 560px;
+    grid-template-columns: 0px 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    grid-template-columns: 100px repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    grid-template-columns: 200px repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto) 100px;
+    grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
+  }
 }
 
 header {

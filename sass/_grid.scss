@@ -1,10 +1,12 @@
+@use 'mixins' as m;
+
 .container {
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr);
     grid-template-rows: repeat(3, auto) 100px;
     margin-top:0;
-    // margin-left: auto;
-    // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1550px;
     height: 100%;
     grid-template-areas:
@@ -12,7 +14,7 @@
     "side main main main"
     "side main main main"
     "side foot foot foot";
-
+    @include m.grid-responsive;
 }
 
 

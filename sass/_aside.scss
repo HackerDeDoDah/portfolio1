@@ -8,6 +8,7 @@ aside {
     position: fixed;
     width: 200px;
     height: 100vh;
+    @include m.aside-responsive;
     h1 {
         font-size: 6rem;
         border-bottom: 4px solid var(--line-color); 

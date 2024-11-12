@@ -1,23 +1,36 @@
-.main-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(2,1fr);
-    justify-content: space-around;
-    width: 1250px;
-    img {
-        width: 300px;
-        align-items: left;
-        margin-top: 20px;
-        &:hover {
-            transition: box-shadow 0.5s ease-in-out;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        }
+@use 'mixins' as m;
+
+.main-container {
+    display: flex;
+    margin-right: auto;
+    margin-left:auto;
+}
+.card {
+    flex-basis: 350px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
     h2 {
-        text-align: left;
-        margin-left: 10px;
+        text-align: center;
     }
-
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: space-between;
+    width: 1311px;
+    min-height: 600px;
+    @include m.responsive;
 }
 
 //----form------------------------------
