@@ -3,6 +3,72 @@
   --line-color: #538be7;
 }
 
+.aside-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 4px solid var(--line-color);
+  background-color: white;
+}
+@media (min-width: 280px) {
+  .aside-nav {
+    width: 260px;
+    display: none;
+  }
+  .aside-nav .aside-nav {
+    display: flex;
+  }
+}
+@media (min-width: 576px) {
+  .aside-nav {
+    width: 560px;
+    display: none;
+  }
+  .aside-nav .contact-me {
+    display: none;
+  }
+  .aside-nav .aside-nav {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .aside-nav {
+    width: 750px;
+    width: 100px;
+    display: block;
+  }
+  .aside-nav .contact-me {
+    display: flex;
+    width: 100px;
+  }
+  .aside-nav .aside-nav {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .aside-nav {
+    width: 970px;
+    width: 200px;
+    display: block;
+  }
+  .aside-nav .contact-me {
+    width: 200px;
+  }
+}
+.aside-nav h1 {
+  font-size: 2rem;
+  margin: 10px;
+  left: 0;
+}
+.aside-nav i {
+  font-size: 2rem;
+  right: 0;
+  margin: 10px;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -17,11 +83,20 @@ aside {
     width: 260px;
     display: none;
   }
+  aside .aside-nav {
+    display: flex;
+  }
 }
 @media (min-width: 576px) {
   aside {
     width: 560px;
     display: none;
+  }
+  aside .contact-me {
+    display: none;
+  }
+  aside .aside-nav {
+    display: flex;
   }
 }
 @media (min-width: 768px) {
@@ -30,12 +105,22 @@ aside {
     width: 100px;
     display: block;
   }
+  aside .contact-me {
+    display: flex;
+    width: 100px;
+  }
+  aside .aside-nav {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   aside {
     width: 970px;
     width: 200px;
     display: block;
+  }
+  aside .contact-me {
+    width: 200px;
   }
 }
 aside h1 {
@@ -69,6 +154,7 @@ aside i {
   color: var(--line-color);
 }
 aside .contact-me {
+  display: flex;
   border-top: 4px solid var(--line-color);
   width: 200px;
   padding-top: 20px;
@@ -111,6 +197,7 @@ aside .icon-container a:hover .fa-instagram {
   margin-right: auto;
   margin-left: auto;
   margin-top: 70px;
+  width: 1310px;
 }
 
 .card {
@@ -261,6 +348,10 @@ button:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  width: 1545px;
 }
 
 :root {
@@ -440,7 +531,7 @@ footer {
   grid-template-columns: 200px repeat(3, 1fr);
   grid-template-rows: repeat(3, auto) 100px;
   margin-top: 0;
-  max-width: 1550px;
+  width: 1545px;
   height: 100%;
   grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
 }
@@ -456,12 +547,14 @@ footer {
     width: 560px;
     grid-template-columns: 0px 1fr 1fr;
     grid-template-rows: auto;
+    grid-template-areas: "none side side" "none main main" "none main main" "none foot foot";
   }
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
     grid-template-columns: 100px repeat(3, 1fr);
+    grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
   }
 }
 @media (min-width: 992px) {
@@ -474,7 +567,7 @@ footer {
 }
 @media (min-width: 1260px) {
   .container {
-    width: 1310px;
+    width: 1545px;
     grid-template-columns: 200px repeat(3, 1fr);
     grid-template-rows: repeat(3, auto) 100px;
     grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
