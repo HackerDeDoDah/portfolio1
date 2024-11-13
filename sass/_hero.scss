@@ -2,14 +2,15 @@
 
 .hero-container {
     display: flex;
+    
     .hero img {
-        width: auto;
+        width: 1310px;
     }
     .text-container {
         position: absolute;
         justify-self: space-around;
-        // top: 30%;
-        // left: 30%;
+        top: 30%;
+        left: 30%;
         text-align: center;
         color: #fff;
         font-size: 1.5rem;
@@ -18,7 +19,6 @@
         padding: 2rem;
         border-radius: 10px;
         z-index: 2;
-        cursor: pointer;
         transition: box-shadow 0.5s ease;
         &:hover {
             box-shadow:
@@ -52,4 +52,45 @@
             color: #0056b3;
         }
     }
+}
+
+.coming {
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #ccc;
+    border-radius: 10px;
+    max-width: 1200px;
+    height: auto;
+    grid-template-areas: 'pict text';
+    margin: 20px;
+    @include m.about-grid-responsive;
+}
+
+.text {
+    grid-area: text;
+    margin: 20px;
+    font-size: 1.5rem;
+    color: black;
+    a {
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: 600;
+    }
+    h1, h3 {
+        text-align: center;
+    }
+}
+.pict {
+    grid-area: pict;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    justify-self: center;
+    align-self: center;
 }

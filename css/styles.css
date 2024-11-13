@@ -14,6 +14,7 @@ aside {
 }
 @media (min-width: 280px) {
   aside {
+    width: 260px;
     display: none;
   }
 }
@@ -34,13 +35,12 @@ aside {
   aside {
     width: 970px;
     width: 200px;
-    display: flex;
+    display: block;
   }
 }
 aside h1 {
   font-size: 6rem;
   border-bottom: 4px solid var(--line-color);
-  border-radius: 4px;
   padding: 30%;
   margin: 0;
   color: black;
@@ -59,7 +59,7 @@ aside li {
 }
 aside a {
   text-decoration: none;
-  color: black;
+  color: rgb(61, 61, 61);
 }
 aside a:hover {
   color: var(--line-color);
@@ -67,6 +67,12 @@ aside a:hover {
 }
 aside i {
   color: var(--line-color);
+}
+aside .contact-me {
+  border-top: 4px solid var(--line-color);
+  width: 200px;
+  padding-top: 20px;
+  margin-top: 40px;
 }
 aside .click {
   color: black;
@@ -76,14 +82,12 @@ aside .click:hover {
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
 }
 aside .icon-container a {
-  color: var(--line-color);
+  text-decoration: none;
+  color: rgb(61, 61, 61);
   font-size: 1.5rem;
   padding: 10px;
   cursor: pointer;
-  transition: color 0.3s;
-}
-aside .icon-container a:hover {
-  text-decoration: none;
+  transition: color 0.3s ease;
 }
 aside .icon-container a:hover .fa-facebook-f {
   color: #1877F2;
@@ -106,6 +110,7 @@ aside .icon-container a:hover .fa-instagram {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 70px;
 }
 
 .card {
@@ -113,11 +118,12 @@ aside .icon-container a:hover .fa-instagram {
   margin: 10px;
   padding: 20px;
   border: 1px solid #ccc;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-in-out;
 }
 .card:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
 .card h2 {
   text-align: center;
@@ -125,6 +131,7 @@ aside .icon-container a:hover .fa-instagram {
 .card img {
   width: 100%;
   height: auto;
+  border-radius: 10px 10px 0 0;
 }
 
 .main-grid {
@@ -137,7 +144,7 @@ aside .icon-container a:hover .fa-instagram {
 }
 @media (min-width: 280px) {
   .main-grid {
-    width: 270px;
+    width: 260px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
@@ -165,7 +172,7 @@ aside .icon-container a:hover .fa-instagram {
 }
 @media (min-width: 1260px) {
   .main-grid {
-    width: 1311px;
+    width: 1310px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -194,6 +201,7 @@ aside .icon-container a:hover .fa-instagram {
 }
 
 #first-name, #last-name {
+  display: flex;
   width: 100%;
   gap: 10px;
 }
@@ -235,6 +243,14 @@ button:hover {
 }
 .contact-info p {
   font-size: 1rem;
+}
+
+.number a {
+  text-decoration: none;
+  color: black;
+}
+.number a:hover {
+  color: var(--line-color);
 }
 
 * {
@@ -283,11 +299,13 @@ footer {
   display: flex;
 }
 .hero-container .hero img {
-  width: auto;
+  width: 1310px;
 }
 .hero-container .text-container {
   position: absolute;
   justify-self: space-around;
+  top: 30%;
+  left: 30%;
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
@@ -296,7 +314,6 @@ footer {
   padding: 2rem;
   border-radius: 10px;
   z-index: 2;
-  cursor: pointer;
   transition: box-shadow 0.5s ease;
 }
 .hero-container .text-container:hover {
@@ -327,6 +344,75 @@ footer {
   color: #0056b3;
 }
 
+.coming {
+  margin-left: 250px;
+  margin-top: 150px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #ccc;
+  border-radius: 10px;
+  max-width: 1200px;
+  height: auto;
+  grid-template-areas: "pict text";
+  margin: 20px;
+}
+@media (min-width: 280px) {
+  .about {
+    width: 260px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 576px) {
+  .about {
+    width: 560px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    width: 750px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    width: 970px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.text {
+  grid-area: text;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: black;
+}
+.text a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-weight: 600;
+}
+.text h1, .text h3 {
+  text-align: center;
+}
+
+.pict {
+  grid-area: pict;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
 :root {
   --line-color: #538be7;
 }
@@ -340,15 +426,13 @@ footer {
   grid-template-columns: 200px repeat(3, 1fr);
   grid-template-rows: repeat(3, auto) 100px;
   margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1550px;
   height: 100%;
   grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
 }
 @media (min-width: 280px) {
   .container {
-    width: 270px;
+    width: 260px;
     grid-template-columns: 0px 1fr;
     grid-template-rows: auto;
   }
@@ -369,6 +453,14 @@ footer {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    grid-template-columns: 200px repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto) 100px;
+    grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1310px;
     grid-template-columns: 200px repeat(3, 1fr);
     grid-template-rows: repeat(3, auto) 100px;
     grid-template-areas: "side head head head" "side main main main" "side main main main" "side foot foot foot";

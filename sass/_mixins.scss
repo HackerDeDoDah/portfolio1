@@ -16,17 +16,19 @@
     }
 }
 @mixin s-c {
-    .fa-facebook-f {
-        color: #1877F2;
-    }
-    .fa-x-twitter {
-        color: #1DA1F2;
-    }
-    .fa-linkedin-in {
-        color: #0A66C2;
-    }
-    .fa-instagram {
-        color: #C13584;
+    &:hover {
+        .fa-facebook-f {
+            color: #1877F2;
+        }
+        .fa-x-twitter {
+            color: #1DA1F2;
+        }
+        .fa-linkedin-in {
+            color: #0A66C2;
+        }
+        .fa-instagram {
+            color: #C13584;
+        }
     }
 }
 
@@ -34,7 +36,7 @@
 //--- media queries ----
 @mixin responsive {
     @media (min-width: 280px) {
-        width: 270px;
+        width: 260px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr);
         
@@ -56,7 +58,7 @@
         grid-template-rows: repeat(2,1fr);
     }
     @media (min-width: 1260px) {
-        width: 1311px;
+        width: 1310px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2,1fr);
     }
@@ -64,6 +66,7 @@
 
 @mixin aside-responsive {
     @media (min-width: 280px) {
+        width: 260px;
         display: none;
     }
     @media (min-width: 576px) {
@@ -79,13 +82,13 @@
     @media (min-width: 992px) {
         width: 970px;
         width: 200px;
-        display: flex;
+        display: block;
     }
 }
 
 @mixin grid-responsive {
     @media (min-width: 280px) {
-        width: 270px;
+        width: 260px;
         grid-template-columns: 0px 1fr;
         grid-template-rows: auto;
     }
@@ -107,5 +110,38 @@
         "side main main main"
         "side main main main"
         "side foot foot foot";
+    }
+    @media (min-width: 1260px) {
+        width: 1310px;
+        grid-template-columns: 200px repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto) 100px;
+        grid-template-areas:
+        "side head head head"
+        "side main main main"
+        "side main main main"
+        "side foot foot foot";
+    }
+}
+
+@mixin about-grid-responsive {
+    @media (min-width: 280px) {
+        width: 260px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media (min-width: 576px) {
+        width: 560px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media (min-width: 768px) {
+        width: 750px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media (min-width: 992px) {
+        width: 970px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
