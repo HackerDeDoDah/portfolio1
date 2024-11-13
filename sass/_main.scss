@@ -31,7 +31,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     justify-content: space-between;
-    width: 1311px;
+    width: 1310px;
     min-height: 600px;
     @include m.responsive;
 }
