@@ -2,21 +2,30 @@
 
 .hero-container {
     display: flex;
+    width: var(--max-w);
+    @include m.responsive;
     
     .hero img {
-        width: 1310px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     .text-container {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         justify-self: space-around;
+        flex-wrap: wrap;
+        max-width: 500px;
+        width: 100%;
         top: 30%;
         left: 30%;
         text-align: center;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1rem;
         background-color: rgba(94, 87, 87, 0.1);
         backdrop-filter: blur(10px);
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 10px;
         z-index: 2;
         transition: box-shadow 0.5s ease;
@@ -82,7 +91,7 @@
     height: auto;
     grid-template-areas: 'pict text';
     margin: 20px;
-    @include m.about-grid-responsive;
+    
 }
 
 .text {

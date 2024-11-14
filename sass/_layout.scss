@@ -10,5 +10,27 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    width: 1545px;
+    max-width: var(--max-w);
+    min-width: 280px;
 }
+
+// .container {
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+
+//     @media (min-width: 576px) {
+//         width: 555px;
+//     }
+//     @media (min-width: 768px) {
+//         width: 750px;
+//     }
+//     @media (min-width: 992px) {
+//         width: 970px;
+
+//     }
+//     @media (min-width: 1260px) {
+//         width: 1200px;
+//     }
+// }
