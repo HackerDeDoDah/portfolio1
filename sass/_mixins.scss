@@ -1,6 +1,6 @@
 :root {
     --line-color: #538be7;
-    --max-w: 1500px;
+    --max-w: 100vw;
 }
 
 @mixin click {
@@ -59,6 +59,19 @@
         .hero-img {
             width: 120%;
         }
+        .scheme {
+            margin-left: 200px;
+        }
+    }
+    @media (min-width: 1260px) {
+        .main-grid {
+            grid-template-columns: repeat( 3, 1fr );
+            // margin-left: 220px;
+        }
+        .hero-img {
+            width: 100vw;
+        }
+
     }
 
 }
