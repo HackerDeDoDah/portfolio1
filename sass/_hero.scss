@@ -9,7 +9,8 @@
     @include m.responsive;
     
     .hero img {
-        width: 100%;
+        // width: 100%;
+        height: 100vh;
         max-height: 1200px;
         object-fit: cover;
     }
