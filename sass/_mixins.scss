@@ -55,13 +55,14 @@
             margin-top: 50px;
         }
         .hero-container {
-            margin-left: 200px;
+            // margin-left: 200px;
+            width: calc(100% -200px);
         }
         .downwards {
             display: flex;
         }
         .hero-img {
-            width: 100%;
+            width: calc(100% - 200px);
         }
         .scheme {
             margin-left: 200px;
