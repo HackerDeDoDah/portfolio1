@@ -80,15 +80,20 @@
 
 .coming {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 700px;
     img {
-        width: 50%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 150px;
-    }   
+        mix-blend-mode: blend;
+    }
+    h1 {
+        margin-left: 200px;
+    }
 }
 
 .about {
