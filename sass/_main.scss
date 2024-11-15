@@ -1,5 +1,10 @@
 @use 'mixins' as m;
 
+
+main {
+    width: calc(100vw - 80px);
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -21,6 +26,11 @@
     }
     h2 {
         text-align: center;
+    }
+    a {
+        text-decoration: none;
+        margin-left: auto;
+        color: black;
     }
     img {
         width: 100%;

@@ -2,24 +2,23 @@
 
 .hero-container {
     display: flex;
-    width: var(--max-w);
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
     @include m.responsive;
     
     .hero img {
         width: 100%;
-        height: auto;
+        max-height: 1200px;
         object-fit: cover;
     }
     .text-container {
         display: flex;
         flex-direction: column;
         position: absolute;
-        justify-self: space-around;
         flex-wrap: wrap;
         max-width: 500px;
         width: 100%;
-        top: 30%;
-        left: 40%;
         text-align: center;
         color: #fff;
         font-size: 1rem;
@@ -37,45 +36,13 @@
                 0 0 25px #0ff; 
         }
     }
-    .downwards {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        text-align: center;
-        padding: 5px;
-        border: 2px solid transparent;
-        border-radius: 10px;
-        background-color: rgba(94, 87, 87, 0.1);
-        backdrop-filter: blur(10px);
-        width: 200px;
-        height: 100px;
-        top: 80%;
-        left: 50%;
-        a {
-            text-decoration: none;
-        }
-        h3 {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-        .fa-chevron-down {
-            font-size: 2rem;
-            color: #fff;
-        }
-        transition: box-shadow 0.5s ease;
-        &:hover {
-            box-shadow:
-                0 0 10px #0ff,
-                0 0 15px #0ff,
-                0 0 20px #0ff,
-                0 0 25px #0ff; 
-        }
-    }
 }
 
+
+
 .scheme {
-    padding: 20px;
-    background-color: #f1f1f1;
+    margin-left: 20px;
+
     h1 {
         text-align: center;
         margin-bottom: 20px;
@@ -100,6 +67,10 @@
     .scs, .treehouse, .netmatters {
         margin: 20px;
         margin-bottom: 40px;
+        background-color: #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
     }
 }
 
@@ -107,7 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1100px;
+    width: 700px;
     img {
         width: 50%;
         margin-left: auto;
@@ -150,4 +121,12 @@
     margin: 20px;
     justify-self: center;
     align-self: center;
+    transition: box-shadow 0.5s ease;
+    &:hover {
+        box-shadow:
+            0 0 10px #0ff,
+            0 0 15px #0ff,
+            0 0 20px #0ff,
+            0 0 25px #0ff; 
+    }
 }

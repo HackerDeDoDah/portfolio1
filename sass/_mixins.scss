@@ -56,20 +56,27 @@
         .hero-container {
             margin-left: 200px;
         }
+        .downwards {
+            display: flex;
+        }
         .hero-img {
-            width: 120%;
+            width: 100%;
         }
         .scheme {
             margin-left: 200px;
         }
+        .coming {
+            margin-left: 200px;
+        }
     }
     @media (min-width: 1260px) {
+
         .main-grid {
             grid-template-columns: repeat( 3, 1fr );
-            // margin-left: 220px;
         }
         .hero-img {
-            width: 100vw;
+            max-width: 100vw;
+            height: auto;
         }
 
     }
