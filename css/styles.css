@@ -630,10 +630,12 @@ footer {
     height: auto;
   }
 }
-.nav-container .fa-solid {
-  font-size: 3rem;
-  margin-left: auto;
-  right: 20px;
+
+button {
+  background-color: #3d9fef;
+}
+button .fa-solid {
+  color: #fff;
 }
 
 .drop-down {
