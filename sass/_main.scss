@@ -3,7 +3,6 @@
 
 main {
     width: calc(100vw - 80px);
-    
 }
 
 .main-grid {
@@ -27,7 +26,6 @@ main {
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)inset;
     }
-    &:hover > :not(:hover){opacity: 0.7;}
     h2 {
         text-align: center;
     }

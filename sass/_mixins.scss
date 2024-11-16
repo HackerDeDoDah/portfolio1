@@ -42,6 +42,9 @@
         aside {
             display: flex;
         }
+        .text-container {
+            max-width: 400px;
+        }
         .form-container {
             flex-direction: row;
             margin-left: 200px;

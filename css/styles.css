@@ -25,6 +25,9 @@ aside {
   aside aside {
     display: flex;
   }
+  aside .text-container {
+    max-width: 400px;
+  }
   aside .form-container {
     flex-direction: row;
     margin-left: 200px;
@@ -158,6 +161,9 @@ main {
   .main-grid aside {
     display: flex;
   }
+  .main-grid .text-container {
+    max-width: 400px;
+  }
   .main-grid .form-container {
     flex-direction: row;
     margin-left: 200px;
@@ -211,9 +217,6 @@ main {
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
-.card:hover > :not(:hover) {
-  opacity: 0.7;
-}
 .card h2 {
   text-align: center;
 }
@@ -242,6 +245,7 @@ html {
 body {
   max-width: var(--max-w);
   min-width: 280px;
+  padding: 0px;
 }
 
 :root {
@@ -301,6 +305,9 @@ footer {
   }
   .hero-container aside {
     display: flex;
+  }
+  .hero-container .text-container {
+    max-width: 400px;
   }
   .hero-container .form-container {
     flex-direction: row;
@@ -565,6 +572,9 @@ button:hover {
   .container aside {
     display: flex;
   }
+  .container .text-container {
+    max-width: 400px;
+  }
   .container .form-container {
     flex-direction: row;
     margin-left: 200px;
@@ -627,6 +637,9 @@ button:hover {
   }
   .nav-container aside {
     display: flex;
+  }
+  .nav-container .text-container {
+    max-width: 400px;
   }
   .nav-container .form-container {
     flex-direction: row;
