@@ -1,27 +1,24 @@
 @use 'mixins' as m;
 
 .hero img {
-    width: calc(100vw - 20px);
-    height: 700px;
+    width: 100vw;
+    height: 900px;
     object-fit: cover;
+    
 }
 
 .hero-container {
     display: flex;
-    width: 100vw;
-    height: 700px;
-    object-fit: cover;
+    width: 100%;
     justify-content: center;
     align-items: center;
     @include m.responsive;
-    
-    
     .text-container {
         display: flex;
         flex-direction: column;
         position: absolute;
         flex-wrap: wrap;
-        max-width: 500px;
+        max-width: 300px;
         width: 100%;
         text-align: center;
         color: #fff;
@@ -40,6 +37,8 @@
                 0 0 25px #0ff; 
         }
     }
+    
+    
 }
 
 
@@ -104,7 +103,8 @@
     max-width: 1200px;
     height: auto;
     grid-template-areas: 'pict text';
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 

@@ -6,15 +6,15 @@
     margin-top: 0;
 
 }
-html {
+html, body {
     scroll-behavior: smooth;
     background-color: #e5dfdf;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
 }
-body {
-    max-width: var(--max-w);
-    min-width: 280px;
-    padding: 0px;
-}
+
 
 // .container {
 //     margin-right: auto;
