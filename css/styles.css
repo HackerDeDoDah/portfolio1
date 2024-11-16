@@ -39,13 +39,14 @@ aside {
   }
   aside .hero-container {
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   aside .downwards {
     display: flex;
   }
   aside .hero-img {
-    width: 100%;
+    width: 100vw;
+    margin-left: 200px;
   }
   aside .scheme {
     margin-left: 200px;
@@ -171,13 +172,14 @@ main {
   }
   .main-grid .hero-container {
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   .main-grid .downwards {
     display: flex;
   }
   .main-grid .hero-img {
-    width: 100%;
+    width: 100vw;
+    margin-left: 200px;
   }
   .main-grid .scheme {
     margin-left: 200px;
@@ -209,6 +211,9 @@ main {
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
+.card:hover > :not(:hover) {
+  opacity: 0.7;
+}
 .card h2 {
   text-align: center;
 }
@@ -226,6 +231,7 @@ main {
 .form-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin-top: 40px;
 }
 
@@ -367,7 +373,7 @@ footer {
 
 .hero-container {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 700px;
   object-fit: cover;
   justify-content: center;
@@ -397,13 +403,14 @@ footer {
   }
   .hero-container .hero-container {
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   .hero-container .downwards {
     display: flex;
   }
   .hero-container .hero-img {
-    width: 100%;
+    width: 100vw;
+    margin-left: 200px;
   }
   .hero-container .scheme {
     margin-left: 200px;
@@ -477,15 +484,20 @@ footer {
 
 .coming {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 700px;
 }
 .coming img {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+  mix-blend-mode: blend;
+}
+.coming h1 {
+  margin-left: 200px;
 }
 
 .about {
@@ -567,13 +579,14 @@ footer {
   }
   .container .hero-container {
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   .container .downwards {
     display: flex;
   }
   .container .hero-img {
-    width: 100%;
+    width: 100vw;
+    margin-left: 200px;
   }
   .container .scheme {
     margin-left: 200px;
@@ -628,13 +641,14 @@ footer {
   }
   .nav-container .hero-container {
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   .nav-container .downwards {
     display: flex;
   }
   .nav-container .hero-img {
-    width: 100%;
+    width: 100vw;
+    margin-left: 200px;
   }
   .nav-container .scheme {
     margin-left: 200px;
