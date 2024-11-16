@@ -58,7 +58,7 @@ aside {
     margin-left: 200px;
     gap: 20px;
   }
-  aside contact-info {
+  aside .contact-info {
     margin-bottom: 0;
     margin: 20px;
   }
@@ -218,7 +218,7 @@ main {
     margin-left: 200px;
     gap: 20px;
   }
-  .main-grid contact-info {
+  .main-grid .contact-info {
     margin-bottom: 0;
     margin: 20px;
   }
@@ -392,7 +392,7 @@ footer {
     margin-left: 200px;
     gap: 20px;
   }
-  .hero-container contact-info {
+  .hero-container .contact-info {
     margin-bottom: 0;
     margin: 20px;
   }
@@ -686,7 +686,7 @@ button:hover {
     margin-left: 200px;
     gap: 20px;
   }
-  .container contact-info {
+  .container .contact-info {
     margin-bottom: 0;
     margin: 20px;
   }
@@ -780,7 +780,7 @@ button:hover {
     margin-left: 200px;
     gap: 20px;
   }
-  .nav-container contact-info {
+  .nav-container .contact-info {
     margin-bottom: 0;
     margin: 20px;
   }
