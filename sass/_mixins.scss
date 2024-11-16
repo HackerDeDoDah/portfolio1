@@ -35,10 +35,15 @@
 
 @mixin responsive {
     @media (min-width: 992px) {
-        width: calc(100vw - 260px);
-        nav {
+        width: calc(100vw - 220px);
+        .nav-container {
             display: none;
         }
+        // .container {
+        //     max-width: var(--max-w);
+        //     justify-content: none;
+        //     align-items: none;
+        // }
         aside {
             display: flex;
         }
@@ -56,6 +61,8 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             margin-left: 220px;
             margin-top: 50px;
+            width: 90%;
+            gap: 20px;
         }
         .hero-container {
             margin-left: 200px;
@@ -73,6 +80,9 @@
         }
         .coming {
             margin-left: 200px;
+        }
+        .card + .card {
+            margin-top: 0px;
         }
     }
     @media (min-width: 1260px) {

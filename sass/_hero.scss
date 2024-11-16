@@ -1,7 +1,7 @@
 @use 'mixins' as m;
 
 .hero img {
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 700px;
     object-fit: cover;
 }
@@ -46,7 +46,7 @@
 
 .scheme {
     margin-left: 20px;
-
+    margin-top: 20px;
     h1 {
         text-align: center;
         margin-bottom: 20px;

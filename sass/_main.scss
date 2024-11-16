@@ -8,16 +8,20 @@ main {
 .main-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-top: 5px;
     @include m.responsive;
 }
+
+.card + .card {
+    margin-top: 20px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 10px;
