@@ -12,3 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// form stuff that i gpt of the interwebs.
+
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+        publicKey: "Mpo133ad6_ppsJtj8",
+    });
+})();
+
+window.onload = function() {
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'form', this)
+            .then(() => {
+                console.log('SUCCESS!');
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
+    });
+}

@@ -112,8 +112,8 @@
                         <p>To arrange a consultation or to discuss ongoing projects, don't hesitate to contact us.</p>
                     </div>
                 </section>
-                <div class="contact-form" id="form">
-                    <form action="/submit_form" method="post">
+                <div class="contact-form" >
+                    <form id="form">
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" id="first-name" name="first_name" placeholder="First Name"required>
@@ -131,7 +131,7 @@
                         <div class="form-group">
                             <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="submitButton">Submit</button>
                     </form>
                 </div>
             </section>
@@ -149,5 +149,6 @@
     </div>
     <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>

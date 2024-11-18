@@ -41,10 +41,7 @@ aside {
   }
 }
 @media (min-width: 992px) {
-  aside {
-    width: calc(100vw - 200px);
-  }
-  aside .nav-container {
+  aside nav {
     display: none;
   }
   aside aside {
@@ -84,6 +81,9 @@ aside {
   }
   aside .coming {
     margin-left: 200px;
+  }
+  aside .about {
+    margin-left: 220px;
   }
   aside .card + .card {
     margin-top: 0px;
@@ -201,10 +201,7 @@ main {
   }
 }
 @media (min-width: 992px) {
-  .main-grid {
-    width: calc(100vw - 200px);
-  }
-  .main-grid .nav-container {
+  .main-grid nav {
     display: none;
   }
   .main-grid aside {
@@ -244,6 +241,9 @@ main {
   }
   .main-grid .coming {
     margin-left: 200px;
+  }
+  .main-grid .about {
+    margin-left: 220px;
   }
   .main-grid .card + .card {
     margin-top: 0px;
@@ -375,10 +375,7 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .hero-container {
-    width: calc(100vw - 200px);
-  }
-  .hero-container .nav-container {
+  .hero-container nav {
     display: none;
   }
   .hero-container aside {
@@ -418,6 +415,9 @@ footer {
   }
   .hero-container .coming {
     margin-left: 200px;
+  }
+  .hero-container .about {
+    margin-left: 220px;
   }
   .hero-container .card + .card {
     margin-top: 0px;
@@ -488,13 +488,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 700px;
+  max-width: 1200px;
+  mix-blend-mode: color-burn;
 }
 .coming img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 100px;
   mix-blend-mode: blend;
 }
 .coming h1 {
@@ -511,6 +512,7 @@ footer {
   grid-template-areas: "pict text";
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
 .text {
@@ -669,10 +671,7 @@ button:hover {
   }
 }
 @media (min-width: 992px) {
-  .container {
-    width: calc(100vw - 200px);
-  }
-  .container .nav-container {
+  .container nav {
     display: none;
   }
   .container aside {
@@ -712,6 +711,9 @@ button:hover {
   }
   .container .coming {
     margin-left: 200px;
+  }
+  .container .about {
+    margin-left: 220px;
   }
   .container .card + .card {
     margin-top: 0px;
@@ -763,10 +765,7 @@ button:hover {
   }
 }
 @media (min-width: 992px) {
-  .nav-container {
-    width: calc(100vw - 200px);
-  }
-  .nav-container .nav-container {
+  .nav-container nav {
     display: none;
   }
   .nav-container aside {
@@ -806,6 +805,9 @@ button:hover {
   }
   .nav-container .coming {
     margin-left: 200px;
+  }
+  .nav-container .about {
+    margin-left: 220px;
   }
   .nav-container .card + .card {
     margin-top: 0px;

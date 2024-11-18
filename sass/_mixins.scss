@@ -63,8 +63,8 @@
         }
     }
     @media (min-width: 992px) {
-        width: calc(100vw - 200px);
-        .nav-container {
+        // width: calc(100vw - 200px);
+        nav {
             display: none;
         }
         aside {
@@ -109,6 +109,9 @@
         }
         .coming {
             margin-left: 200px;
+        }
+        .about {
+            margin-left: 220px;
         }
         .card + .card {
             margin-top: 0px;
