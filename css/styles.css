@@ -831,7 +831,7 @@ button .fa-solid {
   position: absolute;
   z-index: 2000;
   top: 50px;
-  background-color: white;
+  background-color: rgb(51, 43, 43);
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -841,7 +841,7 @@ button .fa-solid {
 }
 .drop-down a {
   display: block;
-  color: black;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   padding: 10px;
