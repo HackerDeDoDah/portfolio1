@@ -72,7 +72,11 @@
         }
         .text-container {
             max-width: 500px;
+            #big {
+                font-size: 2rem;
+            }
         }
+        
         .form-container {
             flex-direction: row;
             margin-left: 200px;
@@ -105,7 +109,7 @@
         //     margin-left: 200px;
         // }
         .scheme {
-            margin-left: 200px;
+            margin-left: 200px; 
         }
         .coming {
             margin-left: 200px;

@@ -50,6 +50,9 @@ aside {
   aside .text-container {
     max-width: 500px;
   }
+  aside .text-container #big {
+    font-size: 2rem;
+  }
   aside .form-container {
     flex-direction: row;
     margin-left: 200px;
@@ -209,6 +212,9 @@ main {
   }
   .main-grid .text-container {
     max-width: 500px;
+  }
+  .main-grid .text-container #big {
+    font-size: 2rem;
   }
   .main-grid .form-container {
     flex-direction: row;
@@ -383,6 +389,9 @@ footer {
   }
   .hero-container .text-container {
     max-width: 500px;
+  }
+  .hero-container .text-container #big {
+    font-size: 2rem;
   }
   .hero-container .form-container {
     flex-direction: row;
@@ -680,6 +689,9 @@ button:hover {
   .container .text-container {
     max-width: 500px;
   }
+  .container .text-container #big {
+    font-size: 2rem;
+  }
   .container .form-container {
     flex-direction: row;
     margin-left: 200px;
@@ -773,6 +785,9 @@ button:hover {
   }
   .nav-container .text-container {
     max-width: 500px;
+  }
+  .nav-container .text-container #big {
+    font-size: 2rem;
   }
   .nav-container .form-container {
     flex-direction: row;

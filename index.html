@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,20 +33,21 @@
                 <div class="hero">
                     <img src="assets\web-developer.jpg" alt="An image of a computer with coding on.">
                 </div>
-                <div class="text-container click">
-                    <h1>My Name is Christopher Day</h1>
-                    <h3>I'm a Web Developer</h3>
+                <div class="text-container click ">
+                    <h1 class="cssanimation lePeek sequence effect3d">My Name is</h1>
+                    <h1 id="big" class="cssanimation lePeek sequence effect3d">Christopher Day</h1>
+                    <h3 class="cssanimation lePeek sequence">I'm a Web Developer</h3>
                 </div>
             </div>
         </header>
         <aside>
-            <h1 class="click"><a href="index.html#top"><strong>C</strong></a></h1>
+            <h1 class="click"><a href="index.html#top" ><strong class="cssanimation leScaleXIn sequence">C</strong></a></h1>
             <ul>
-                <li><a href="about.html">About Me</a>
-                <li><a href="index.html#folio">My Portfolio</a>
-                <li><a href="code.html">Coding Examples</a>
-                <li><a href="scheme.html">SCS Scheme</a>
-                <li class="contact-me"><a href="#form">Contact Me</a>
+                <li><a href="about.html"  class="cssanimation leFlyInLeft sequence">About Me</a>
+                <li><a href="index.html#folio"  class="cssanimation leFlyInLeft sequence">My Portfolio</a>
+                <li><a href="code.html"  class="cssanimation leFlyInLeft sequence">Coding Examples</a>
+                <li><a href="scheme.html"  class="cssanimation leFlyInLeft sequence">SCS Scheme</a>
+                <li class="contact-me"><a href="#form" class="cssanimation leFlyInLeft sequence">Contact Me</a>
             </ul>
             <div class="icon-container">
                 <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
@@ -150,5 +152,6 @@
     <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
 </body>
 </html>
