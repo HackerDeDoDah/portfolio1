@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/animsition/animsition.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -41,27 +42,29 @@
             </div>
         </header>
         <aside>
-            <h1 class="click"><a href="index.html#top" ><strong class="cssanimation leScaleXIn sequence">C</strong></a></h1>
-            <ul>
-                <li><a href="about.html"  class="cssanimation leFlyInLeft sequence">About Me</a>
-                <li><a href="index.html#folio"  class="cssanimation leFlyInLeft sequence">My Portfolio</a>
-                <li><a href="code.html"  class="cssanimation leFlyInLeft sequence">Coding Examples</a>
-                <li><a href="scheme.html"  class="cssanimation leFlyInLeft sequence">SCS Scheme</a>
-                <li class="contact-me"><a href="#form" class="cssanimation leFlyInLeft sequence">Contact Me</a>
-            </ul>
-            <div class="icon-container">
-                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
+            <div class="animsition">
+                <h1 class="click"><a href="index.html#top" ><strong class="cssanimation leScaleXIn sequence">C</strong></a></h1>
+                <ul>
+                    <li><a href="about.html"  class="cssanimation leFlyInLeft sequence animsition-link">About Me</a>
+                    <li><a href="index.html#folio"  class="cssanimation leFlyInLeft sequence">My Portfolio</a>
+                    <li><a href="code.html"  class="cssanimation leFlyInLeft sequence animsition-link">Coding Examples</a>
+                    <li><a href="scheme.html"  class="cssanimation leFlyInLeft sequence animsition-link">SCS Scheme</a>
+                    <li class="contact-me"><a href="#form" class="cssanimation leFlyInLeft sequence">Contact Me</a>
+                </ul>
+                <div class="icon-container">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
         </aside>
 
@@ -149,9 +152,11 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="js/animsition/animsition.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
-</body>
+    <script src="script.js"></script>
+    </body>
 </html>
