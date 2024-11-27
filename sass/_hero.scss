@@ -19,19 +19,32 @@
         position: absolute;
         flex-wrap: wrap;
         max-width: 200px;
-        width: 900%;
-        text-align: left;
-        color: #44fa20;
-        text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
-        font-size: 1rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 90%;
+        text-align: center;
         background-color: rgba(94, 87, 87, 0.1);
         backdrop-filter: blur(20px);
-        padding: 1rem;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 15px;
         border-radius: 0 10px 10px 0;
-        border-left: 4px solid #44fa20;
+        border-left: 4px solid var(--green-c);
         z-index: 2;
         transition: box-shadow 0.5s ease;
+        h1 {
+            font-size: 4rem;
+            text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
+        }
+        .typing{
+            width: 320px;
+            font-size: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-right: 3px solid var(--green-c);
+            animation: typing 4s steps(12, end), cursor .4s steps(12, end) infinite;
+            animation-fill-mode: forwards;
+            margin-bottom: 10px;
+        }
+        
         &:hover {
             box-shadow:
                 0 0 10px #0ff,
@@ -43,37 +56,6 @@
     
     
 }
-.typing-container {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #0f0;
-    font-size: 1.3rem;
-    line-height: 1;
-}
-
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
-.typing-container {
-    animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
-}
-
 
 .scheme {
     margin-left: 20px;

@@ -2,6 +2,10 @@
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -10,8 +14,8 @@ aside {
   flex-direction: column;
   margin-left: 0;
   align-items: center;
-  border-right: 4px solid var(--line-color);
-  background-color: #6b7ce9;
+  border-right: 4px solid var(--red-c);
+  background-color: var(--blue-c);
   position: fixed;
   max-width: 200px;
   height: 100vh;
@@ -100,7 +104,7 @@ aside {
 }
 aside h1 {
   font-size: 6rem;
-  border-bottom: 4px solid var(--line-color);
+  border-bottom: 4px solid var(--red-c);
   max-width: 200px;
   padding: 30%;
   margin: 0;
@@ -131,7 +135,7 @@ aside i {
 }
 aside .contact-me {
   display: flex;
-  border-top: 4px solid var(--line-color);
+  border-top: 4px solid var(--red-c);
   width: 200px;
   padding-top: 20px;
   padding-left: 45px;
@@ -168,6 +172,10 @@ aside .icon-container a:hover .fa-instagram {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -179,6 +187,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-items: space-evenly;
+  align-items: center;
   margin-top: 5px;
 }
 @media (min-width: 576px) {
@@ -274,7 +283,7 @@ main {
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: #1bf0b4;
+  background-color: var(--green-c);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-in-out;
@@ -304,7 +313,7 @@ main {
 
 html, body {
   scroll-behavior: smooth;
-  background-color: rgba(8, 19, 28, 0.6901960784);
+  background-color: var(--blue-c);
   margin: 0;
   padding: 0;
   height: 100%;
@@ -313,6 +322,10 @@ html, body {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -346,6 +359,10 @@ footer {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -449,48 +466,34 @@ footer {
   position: absolute;
   flex-wrap: wrap;
   max-width: 200px;
-  width: 900%;
-  text-align: left;
-  color: #44fa20;
-  text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
-  font-size: 1rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  width: 90%;
+  text-align: center;
   background-color: rgba(94, 87, 87, 0.1);
   backdrop-filter: blur(20px);
-  padding: 1rem;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
   border-radius: 0 10px 10px 0;
-  border-left: 4px solid #44fa20;
+  border-left: 4px solid var(--green-c);
   z-index: 2;
   transition: box-shadow 0.5s ease;
 }
+.hero-container .text-container h1 {
+  font-size: 4rem;
+  text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
+}
+.hero-container .text-container .typing {
+  width: 320px;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 3px solid var(--green-c);
+  animation: typing 4s steps(12, end), cursor 0.4s steps(12, end) infinite;
+  animation-fill-mode: forwards;
+  margin-bottom: 10px;
+}
 .hero-container .text-container:hover {
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff, 0 0 25px #0ff;
-}
-
-.typing-container {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #0f0;
-  font-size: 1.3rem;
-  line-height: 1;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-.typing-container {
-  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
 }
 
 .scheme {
@@ -591,6 +594,10 @@ footer {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -608,7 +615,7 @@ footer {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #8890c6;
+  background-color: var(--yellow-c);
 }
 
 .form-group {
@@ -641,7 +648,7 @@ textarea {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: var(--green-c);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -651,6 +658,12 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 .contact-info {
@@ -683,6 +696,10 @@ button:hover {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -777,6 +794,10 @@ button:hover {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
+  --blue-c: #4e4ede;
+  --red-c: #de4e95;
+  --yellow-c: #dede4e;
+  --green-c: #4ede97;
   color-scheme: dark;
 }
 
@@ -873,7 +894,7 @@ button:hover {
 }
 
 button {
-  background-color: #3d9fef;
+  background-color: var(--blue-c);
 }
 button .fa-solid {
   color: #fff;

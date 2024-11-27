@@ -14,7 +14,7 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #8890c6;
+    background-color: var(--yellow-c);
 }
 
 .form-group {
@@ -43,7 +43,7 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: var(--green-c);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -52,6 +52,12 @@ button {
 }
 button:hover {
     background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 .contact-info {

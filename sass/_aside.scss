@@ -7,8 +7,8 @@ aside {
     flex-direction: column;
     margin-left: 0;
     align-items: center;
-    border-right: 4px solid var(--line-color);
-    background-color: #6b7ce9;
+    border-right: 4px solid var(--red-c);
+    background-color: var(--blue-c);
     position: fixed;
     max-width: 200px;
     height: 100vh;
@@ -16,7 +16,7 @@ aside {
     
     h1 {
         font-size: 6rem;
-        border-bottom: 4px solid var(--line-color); 
+        border-bottom: 4px solid var(--red-c); 
         max-width: 200px;
         padding: 30%;
         margin: 0;
@@ -48,7 +48,7 @@ aside {
     .contact-me {
         display: flex;
         
-        border-top: 4px solid var(--line-color);
+        border-top: 4px solid var(--red-c);
         width: 200px;
         padding-top: 20px;
         padding-left: 45px;
