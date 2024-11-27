@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="js/animsition/animsition.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,24 +31,40 @@
             </nav>
             <div class="hero-container">
                 <div class="hero">
-                    <img src="assets\web-developer.jpg" alt="An image of a computer with coding on.">
+                    <img src="assets\web-developer.jpg" alt="An image of coding art.">
                 </div>
                 <div class="text-container click ">
-                    <h1 class="cssanimation lePeek sequence effect3d">My Name is</h1>
-                    <h1 id="big" class="cssanimation lePeek sequence effect3d">Christopher Day</h1>
-                    <h3 class="cssanimation lePeek sequence">I'm a Web Developer</h3>
+                    <div class="typing-container">
+                        <h2>My Name is</h2>
+                    </div>
+                    <div class="typing-container">
+                        <h1>Christopher Day.</h1>
+                    </div>
+                    <div class="typing-container">
+                        <h3>I'm a Web Developer</h3>
+                    </div>
                 </div>
             </div>
         </header>
         <aside>
-            <div class="animsition">
+            <div>
                 <h1 class="click"><a href="index.html#top" ><strong class="cssanimation leScaleXIn sequence">C</strong></a></h1>
                 <ul>
-                    <li><a href="about.html"  class="cssanimation leFlyInLeft sequence animsition-link">About Me</a>
-                    <li><a href="index.html#folio"  class="cssanimation leFlyInLeft sequence">My Portfolio</a>
-                    <li><a href="code.html"  class="cssanimation leFlyInLeft sequence animsition-link">Coding Examples</a>
-                    <li><a href="scheme.html"  class="cssanimation leFlyInLeft sequence animsition-link">SCS Scheme</a>
-                    <li class="contact-me"><a href="#form" class="cssanimation leFlyInLeft sequence">Contact Me</a>
+                    <div class="page">
+                        <li><a href="about.html"  class="cssanimation leFlyInLeft sequence " data-jquery-page-name="1">About Me</a>
+                    </div>
+                    <div class="page">
+                        <li><a href="index.html#folio"  class="cssanimation leFlyInLeft sequence">My Portfolio</a>
+                    </div>
+                    <div class="page">
+                        <li><a href="code.html"  class="cssanimation leFlyInLeft sequence " data-jquery-page-name="2">Coding Examples</a>
+                    </div>
+                    <div class="page">
+                        <li><a href="scheme.html"  class="cssanimation leFlyInLeft sequence " data-jquery-page-name="3">SCS Scheme</a>
+                    </div>
+                    <div class="page">
+                        <li class="contact-me"><a href="#form" class="cssanimation leFlyInLeft sequence">Contact Me</a>
+                    </div>
                 </ul>
                 <div class="icon-container">
                     <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
@@ -154,9 +169,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
-    <script src="js/animsition/animsition.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     </body>
 </html>

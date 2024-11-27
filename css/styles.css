@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 aside {
@@ -10,7 +11,7 @@ aside {
   margin-left: 0;
   align-items: center;
   border-right: 4px solid var(--line-color);
-  background-color: #e5dfdf;
+  background-color: #6b7ce9;
   position: fixed;
   max-width: 200px;
   height: 100vh;
@@ -165,8 +166,9 @@ aside .icon-container a:hover .fa-instagram {
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 main {
@@ -176,6 +178,7 @@ main {
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: space-evenly;
   margin-top: 5px;
 }
 @media (min-width: 576px) {
@@ -268,9 +271,10 @@ main {
 .card {
   display: flex;
   flex-direction: column;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: #1bf0b4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-in-out;
@@ -300,15 +304,16 @@ main {
 
 html, body {
   scroll-behavior: smooth;
-  background-color: #e5dfdf;
+  background-color: rgba(8, 19, 28, 0.6901960784);
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 footer {
@@ -339,8 +344,9 @@ footer {
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 .hero img {
@@ -442,20 +448,49 @@ footer {
   flex-direction: column;
   position: absolute;
   flex-wrap: wrap;
-  max-width: 300px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
+  max-width: 200px;
+  width: 900%;
+  text-align: left;
+  color: #44fa20;
+  text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
   font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: rgba(94, 87, 87, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
+  border-left: 4px solid #44fa20;
   z-index: 2;
   transition: box-shadow 0.5s ease;
 }
 .hero-container .text-container:hover {
-  box-shadow: 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 25px #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff, 0 0 25px #0ff;
+}
+
+.typing-container {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0f0;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.typing-container {
+  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
 }
 
 .scheme {
@@ -554,8 +589,9 @@ footer {
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 .form-container {
@@ -572,7 +608,7 @@ footer {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #9d8686;
+  background-color: #8890c6;
 }
 
 .form-group {
@@ -618,7 +654,7 @@ button:hover {
 }
 
 .contact-info {
-  background-color: #9d8686;
+  background-color: #8890c6;
   border-radius: 10px;
   padding: 10px;
   text-align: left;
@@ -638,15 +674,16 @@ button:hover {
 .number a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: rgb(223, 210, 210);
 }
 .number a:hover {
   color: var(--line-color);
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 .container {
@@ -738,8 +775,9 @@ button:hover {
 }
 
 :root {
-  --line-color: #538be7;
+  --line-color: #fff;
   --max-w: 100vw;
+  color-scheme: dark;
 }
 
 .nav-container {

@@ -14,7 +14,7 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #9d8686
+    background-color: #8890c6;
 }
 
 .form-group {
@@ -55,7 +55,7 @@ button:hover {
 }
 
 .contact-info {
-    background-color: #9d8686;
+    background-color: #8890c6;
     border-radius: 10px;
     padding: 10px;
     text-align: left;
@@ -75,7 +75,7 @@ button:hover {
     a {
         text-decoration: none;
         font-weight: 600;
-        color: black;
+        color: rgb(223, 210, 210);
         &:hover {
             color: var(--line-color);
         }

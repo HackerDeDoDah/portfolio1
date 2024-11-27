@@ -18,21 +18,24 @@
         flex-direction: column;
         position: absolute;
         flex-wrap: wrap;
-        max-width: 300px;
-        width: 100%;
-        text-align: center;
-        color: #fff;
+        max-width: 200px;
+        width: 900%;
+        text-align: left;
+        color: #44fa20;
+        text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
         font-size: 1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         background-color: rgba(94, 87, 87, 0.1);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         padding: 1rem;
-        border-radius: 10px;
+        border-radius: 0 10px 10px 0;
+        border-left: 4px solid #44fa20;
         z-index: 2;
         transition: box-shadow 0.5s ease;
         &:hover {
             box-shadow:
                 0 0 10px #0ff,
-                0 0 15px #0ff,
+                0 0 20px #0ff,
                 0 0 20px #0ff,
                 0 0 25px #0ff; 
         }
@@ -40,7 +43,36 @@
     
     
 }
+.typing-container {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #0f0;
+    font-size: 1.3rem;
+    line-height: 1;
+}
 
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.typing-container {
+    animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
+}
 
 
 .scheme {

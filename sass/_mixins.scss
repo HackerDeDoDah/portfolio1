@@ -1,6 +1,7 @@
 :root {
-    --line-color: #538be7;
+    --line-color: #fff;
     --max-w: 100vw;
+    color-scheme: dark;
 }
 
 @mixin click {
@@ -16,6 +17,7 @@
         }
     }
 }
+
 @mixin s-c {
     &:hover {
         .fa-facebook-f {
