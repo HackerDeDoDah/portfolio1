@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="nav-container">
+    <div class="nav">
+        <button class="toggle-button">☰</button>
+    </div>
+    <nav id="menu">
+        <header>
+            <h2>Menu</h2>
+        </header>
+        <ul>
+            <li><a href="index.html#top">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#folio">Portfolio</a></li>
+            <li><a href="code.html">Coding Examples</a></li>
+            <li><a href="scheme.html">SCS Scheme</a></li>
+            <li class="contact-me"><a href="#form">Contact Me</a></li>
+        </ul>
+        <div class="icon-container-1">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- <nav class="nav-container">
         <div id="dropdown" class="drop-down">
             <ul>
                 <li><a href="index.html#top">Home</a></li>
@@ -26,7 +57,7 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         
-    </nav>
+    </nav> -->
     <div class="container">
         <header>
             <div class="scheme">
@@ -88,7 +119,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

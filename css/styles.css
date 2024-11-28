@@ -2,10 +2,10 @@
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -180,10 +180,10 @@ aside .icon-container a:hover .fa-instagram {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -337,10 +337,10 @@ html, body {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -374,10 +374,10 @@ footer {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -616,10 +616,10 @@ footer {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -718,10 +718,10 @@ button:hover {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -823,10 +823,10 @@ button:hover {
 :root {
   --line-color: #fff;
   --max-w: 100vw;
-  --blue-c: #4e4ede;
+  --blue-c: #ffb319;
   --red-c: #de4e95;
-  --yellow-c: #dede4e;
-  --green-c: #4ede97;
+  --yellow-c: #ffe194;
+  --green-c: #88dfd8;
   color-scheme: dark;
 }
 
@@ -886,13 +886,13 @@ button:hover {
   list-style-type: none;
   font-size: 1.3rem;
 }
-#menu ul li {
+#menu li {
   text-decoration: none;
-  color: rgb(186, 183, 183);
+  color: rgb(18, 17, 17);
 }
 #menu .icon-container-1 a {
   text-decoration: none;
-  color: rgb(186, 183, 183);
+  color: rgb(13, 12, 12);
   font-size: 1.5rem;
   padding: 10px;
   cursor: pointer;
