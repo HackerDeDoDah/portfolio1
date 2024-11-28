@@ -31,12 +31,12 @@
         z-index: 2;
         transition: box-shadow 0.5s ease;
         h1 {
-            font-size: 4rem;
+            font-size: 2rem;
             text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
         }
         .typing{
-            width: 320px;
-            font-size: 2rem;
+            width: 180px;
+            font-size: 1rem;
             margin-left: auto;
             margin-right: auto;
             border-right: 3px solid var(--green-c);

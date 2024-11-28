@@ -1,49 +1,73 @@
 @use 'mixins' as m;
 
-.nav-container {
-    display: flex;
+.nav button {
+    width: 50px;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 200;
+}
+
+.slideout-menu {
     position: fixed;
     top: 0;
-    width: 40px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto; 
-    @include m.responsive;
+    bottom: 0;
+    width: 256px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
 }
 
-button {
-    background-color: var(--blue-c);
-    .fa-solid {
-        color: #fff;
-    }
+.slideout-menu-left {
+    left: 0;
 }
-.drop-down {
-    display: none;
-    position: absolute;
-    z-index: 2000;
-    top: 50px;
-    background-color: rgb(51, 43, 43);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 100%;
-    width: 100%;
-    a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px;
-        &:hover {
-            background-color: #f0f0f0;
+
+.slideout-menu-right {
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #FFF;
+    min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+#menu {
+    padding-top: 80px;
+    padding-left: 20px;
+    ul {
+        line-height: 36px;
+        list-style-type: none;
+        font-size: 1.3rem;
+        li {
+            text-decoration: none;
+            color: rgb(186, 183, 183);
         }
     }
-    ul {
-        list-style-type: none;
+    .icon-container-1 {
+        a {
+            text-decoration: none;
+            color: rgb(186, 183, 183);
+            font-size: 1.5rem;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.5s ease;
+            @include m.s-c;
+        }
     }
 }
-
-
-

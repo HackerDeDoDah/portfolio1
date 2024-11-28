@@ -70,7 +70,7 @@
     }
     @media (min-width: 992px) {
         // width: calc(100vw - 200px);
-        nav {
+        .nav {
             display: none;
         }
         aside {
@@ -80,6 +80,13 @@
             max-width: 500px;
             #big {
                 font-size: 2rem;
+            }
+            .typing {
+                width: 360px;
+                font-size: 2rem;
+            }
+            h1 {
+                font-size: 4rem;
             }
         }
         
