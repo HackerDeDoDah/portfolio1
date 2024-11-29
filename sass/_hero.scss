@@ -15,6 +15,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: rgb(27, 26, 26);
     @include m.responsive;
     .text-container {
         display: flex;
@@ -115,19 +116,17 @@
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     background-color: #ccc;
     border-radius: 10px;
     max-width: 1200px;
     height: auto;
-    grid-template-areas: 'pict text';
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
 
 .text {
-    grid-area: text;
     margin: 20px;
     font-size: 1.5rem;
     color: black;
@@ -142,11 +141,10 @@
     }
 }
 .pict {
-    grid-area: pict;
     border-radius: 10px;
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     transition: box-shadow 0.5s ease;
     &:hover {

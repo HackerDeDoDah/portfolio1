@@ -39,10 +39,20 @@
     }
 }
 
+
+
 @mixin responsive {
+
+    @media (min-width: 280px) {
+        
+    }
     @media (min-width: 576px) {
         footer {
             display: flex;
+        }
+
+        .about {
+            grid-template-columns: 1fr;
         }
 
         .card + .card {
@@ -61,6 +71,10 @@
             margin-top: 0px;
         }
 
+        .about {
+            grid-template-columns: 1fr 2fr;
+        }
+
         .main-grid {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             margin-top: 50px;
@@ -73,10 +87,9 @@
         .nav, nav {
             display: none;
         }
-        
         aside {
             display: flex;
-            z-index: 200;
+            z-index: 2000;
         }
         .text-container {
             max-width: 500px;

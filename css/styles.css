@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url(open_dyslexicOpenDyslexic-Bold.otf);
 :root {
   --line-color: #fff;
   --max-w: 100vw;
@@ -25,6 +25,9 @@ aside {
   aside footer {
     display: flex;
   }
+  aside .about {
+    grid-template-columns: 1fr;
+  }
   aside .card + .card {
     margin-top: 0px;
   }
@@ -39,6 +42,9 @@ aside {
   aside .card + .card {
     margin-top: 0px;
   }
+  aside .about {
+    grid-template-columns: 1fr 2fr;
+  }
   aside .main-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 50px;
@@ -52,7 +58,7 @@ aside {
   }
   aside aside {
     display: flex;
-    z-index: 200;
+    z-index: 2000;
   }
   aside .text-container {
     max-width: 500px;
@@ -198,10 +204,14 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  background-color: rgb(27, 26, 26);
 }
 @media (min-width: 576px) {
   .main-grid footer {
     display: flex;
+  }
+  .main-grid .about {
+    grid-template-columns: 1fr;
   }
   .main-grid .card + .card {
     margin-top: 0px;
@@ -217,6 +227,9 @@ main {
   .main-grid .card + .card {
     margin-top: 0px;
   }
+  .main-grid .about {
+    grid-template-columns: 1fr 2fr;
+  }
   .main-grid .main-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 50px;
@@ -230,7 +243,7 @@ main {
   }
   .main-grid aside {
     display: flex;
-    z-index: 200;
+    z-index: 2000;
   }
   .main-grid .text-container {
     max-width: 500px;
@@ -324,7 +337,7 @@ main {
 
 * {
   box-sizing: border-box;
-  font-family: "Comic Neue", cursive;
+  font-family: "OpenDylexic-Bold", cursive;
   margin-top: 0;
 }
 
@@ -353,6 +366,7 @@ footer {
   max-width: 100vw;
   width: 100%;
   align-items: center;
+  background-color: rgb(27, 26, 26);
 }
 
 .copyright {
@@ -398,10 +412,14 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: rgb(27, 26, 26);
 }
 @media (min-width: 576px) {
   .hero-container footer {
     display: flex;
+  }
+  .hero-container .about {
+    grid-template-columns: 1fr;
   }
   .hero-container .card + .card {
     margin-top: 0px;
@@ -417,6 +435,9 @@ footer {
   .hero-container .card + .card {
     margin-top: 0px;
   }
+  .hero-container .about {
+    grid-template-columns: 1fr 2fr;
+  }
   .hero-container .main-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 50px;
@@ -430,7 +451,7 @@ footer {
   }
   .hero-container aside {
     display: flex;
-    z-index: 200;
+    z-index: 2000;
   }
   .hero-container .text-container {
     max-width: 500px;
@@ -580,19 +601,17 @@ footer {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   background-color: #ccc;
   border-radius: 10px;
   max-width: 1200px;
   height: auto;
-  grid-template-areas: "pict text";
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
 .text {
-  grid-area: text;
   margin: 20px;
   font-size: 1.5rem;
   color: black;
@@ -608,11 +627,10 @@ footer {
 }
 
 .pict {
-  grid-area: pict;
   border-radius: 10px;
-  width: 300px;
+  max-width: 300px;
   margin: 20px;
-  justify-self: center;
+  justify-self: start;
   align-self: center;
   transition: box-shadow 0.5s ease;
 }
@@ -741,6 +759,9 @@ button:hover {
   .container footer, .container-inner footer {
     display: flex;
   }
+  .container .about, .container-inner .about {
+    grid-template-columns: 1fr;
+  }
   .container .card + .card, .container-inner .card + .card {
     margin-top: 0px;
   }
@@ -755,6 +776,9 @@ button:hover {
   .container .card + .card, .container-inner .card + .card {
     margin-top: 0px;
   }
+  .container .about, .container-inner .about {
+    grid-template-columns: 1fr 2fr;
+  }
   .container .main-grid, .container-inner .main-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 50px;
@@ -768,7 +792,7 @@ button:hover {
   }
   .container aside, .container-inner aside {
     display: flex;
-    z-index: 200;
+    z-index: 2000;
   }
   .container .text-container, .container-inner .text-container {
     max-width: 500px;

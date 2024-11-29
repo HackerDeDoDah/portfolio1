@@ -11,6 +11,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    background-color: rgb(27, 26, 26);
     @include m.responsive;
 }
 
