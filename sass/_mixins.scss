@@ -70,11 +70,13 @@
     }
     @media (min-width: 992px) {
         // width: calc(100vw - 200px);
-        .nav {
+        .nav, nav {
             display: none;
         }
+        
         aside {
             display: flex;
+            z-index: 200;
         }
         .text-container {
             max-width: 500px;
@@ -111,16 +113,11 @@
             gap: 20px;
         }
         .hero-container {
-            // margin-left: 200px;
             width: 100%;
         }
         .downwards {
             display: flex;
         }
-        // .hero-img {
-        //     width: 100%;
-        //     margin-left: 200px;
-        // }
         .scheme {
             margin-left: 200px; 
         }
@@ -139,11 +136,5 @@
         .main-grid {
             grid-template-columns: repeat( 3, 1fr );
         }
-        // .hero-img {
-        //     max-width: 100%;
-        //     height: auto;
-        // }
-
     }
-
 }

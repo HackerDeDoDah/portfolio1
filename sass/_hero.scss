@@ -1,11 +1,14 @@
 @use 'mixins' as m;
 
-.hero img {
-    width: 100vw;
-    height: 900px;
-    object-fit: cover;
-    
+.hero {
+    height: 100vh;
+    img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
 }
+
 
 .hero-container {
     display: flex;
