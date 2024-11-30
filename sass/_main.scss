@@ -3,15 +3,16 @@
 
 main {
     max-width: 100%;
+    width: 98%;
     padding: 20px;
-    background-color: rgb(27, 26, 26);
+    background-color: #ccc;
 }
 
 .main-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    background-color: rgb(27, 26, 26);
+    background-color: #ccc;
     @include m.responsive;
 }
 
@@ -25,7 +26,7 @@ main {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    background-color: var(--green-c);
+    background-color: #8890c6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.5s ease-in-out;

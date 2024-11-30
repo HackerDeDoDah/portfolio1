@@ -1,4 +1,4 @@
-@import url(open_dyslexicOpenDyslexic-Bold.otf);
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 :root {
   --line-color: #fff;
   --max-w: 100vw;
@@ -6,7 +6,6 @@
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 aside {
@@ -15,7 +14,7 @@ aside {
   margin-left: 0;
   align-items: center;
   border-right: 4px solid var(--red-c);
-  background-color: var(--blue-c);
+  background-color: #8890c6;
   position: fixed;
   max-width: 200px;
   height: 100vh;
@@ -191,20 +190,20 @@ aside .icon-container a:hover .fa-instagram {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 main {
   max-width: 100%;
+  width: 98%;
   padding: 20px;
-  background-color: rgb(27, 26, 26);
+  background-color: #ccc;
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  background-color: rgb(27, 26, 26);
+  background-color: #ccc;
 }
 @media (min-width: 576px) {
   .main-grid footer {
@@ -313,7 +312,7 @@ main {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: var(--green-c);
+  background-color: #8890c6;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-in-out;
@@ -335,15 +334,19 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
+@font-face {
+  font-family: "OpenDyslexic-Regular";
+  src: url("open_dyslexic/OpenDyslexic-Regular.otf") format("opentype");
+}
 * {
   box-sizing: border-box;
-  font-family: "OpenDylexic-Bold", cursive;
+  font-family: "OpenDyslexic-Regular", cursive;
   margin-top: 0;
 }
 
 html, body {
   scroll-behavior: smooth;
-  background-color: rgb(27, 26, 26);
+  background-color: #ccc;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -356,7 +359,6 @@ html, body {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 footer {
@@ -366,7 +368,7 @@ footer {
   max-width: 100vw;
   width: 100%;
   align-items: center;
-  background-color: rgb(27, 26, 26);
+  background-color: #ccc;
 }
 
 .copyright {
@@ -395,14 +397,13 @@ footer {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 .hero {
   height: 100vh;
 }
 .hero img {
-  width: 100vw;
+  width: 98.5vw;
   height: 100vh;
   object-fit: cover;
 }
@@ -518,7 +519,7 @@ footer {
   max-width: 200px;
   width: 90%;
   text-align: center;
-  background-color: rgba(94, 87, 87, 0.1);
+  background-color: rgba(146, 145, 145, 0.2);
   backdrop-filter: blur(20px);
   padding-top: 10px;
   padding-bottom: 5px;
@@ -530,7 +531,7 @@ footer {
 }
 .hero-container .text-container h1 {
   font-size: 2rem;
-  text-shadow: -2px -2px 0 #fff, 2px 2px 0 #000;
+  text-shadow: -2px -2px 0 #777171, 2px 2px 0 #000;
 }
 .hero-container .text-container .typing {
   width: 180px;
@@ -645,7 +646,6 @@ footer {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 .form-container {
@@ -662,7 +662,7 @@ footer {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: var(--yellow-c);
+  background-color: #8890c6;
 }
 
 .form-group {
@@ -747,7 +747,6 @@ button:hover {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 .container, .container-inner {
@@ -859,7 +858,6 @@ button:hover {
   --red-c: #de4e95;
   --yellow-c: #ffe194;
   --green-c: #88dfd8;
-  color-scheme: dark;
 }
 
 .nav button {
@@ -895,7 +893,7 @@ button:hover {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF;
+  background-color: #ccc;
   min-height: 100vh;
 }
 
