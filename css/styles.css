@@ -346,13 +346,9 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
-@font-face {
-  font-family: "OpenDyslexic-Regular";
-  src: url("open_dyslexic/OpenDyslexic-Regular.otf") format("opentype");
-}
 * {
   box-sizing: border-box;
-  font-family: "OpenDyslexic-Regular", cursive;
+  font-family: "comic-neue", sans-serif;
   margin-top: 0;
 }
 
