@@ -66,17 +66,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 2525;
 
         //Recipients
-        $mail->setFrom('chrisdaypro@protonmail.com', 'Christopher Day');
+        $mail->setFrom('chrisdaypro@protonmail.com', 'Job Queries from Portfolio');
         $mail->addAddress('monkey0679@gmail.com', 'Christopher Day');
 
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
         $mail->Body    = "<h1>New Contact Form Submission</h1>
-                          <p><strong>Name:</strong> $name</p>
-                          <p><strong>Company:</strong> $company</p>
-                          <p><strong>Email:</strong> $email</p>
-                          <p><strong>Message:</strong> $message</p>";
+                        <p><strong>Name:</strong> $name</p>
+                        <p><strong>Company:</strong> $company</p>
+                        <p><strong>Email:</strong> $email</p>
+                        <p><strong>Message:</strong> $message</p>";
 
         // Send email
         $mail->send();

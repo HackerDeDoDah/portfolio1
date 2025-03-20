@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
             showError(email, 'Please enter a valid email address.');
         }
 
-        if (!company.value.trim()) {
-            isValid = false;
-            showError(company, 'Company is required.');
-        }
+        // if (!company.value.trim()) {
+        //     isValid = false;
+        //     showError(company, 'Company is required.');
+        // }
 
         if (!message.value.trim()) {
             isValid = false;
@@ -86,7 +86,7 @@ const cols = Math.floor(w / 20) + 1;
 const ypos = Array(cols).fill(0);
 
 // Words to display
-const words = ["Chris Day", "Developer", "Designer", "Father"];
+const words = ["Christopher Day", "Developer", "Designer", "Father"];
 
 ctx.fillStyle = '#000';
 ctx.fillRect(0, 0, w, h);
