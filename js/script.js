@@ -1,5 +1,5 @@
 
-
+//side menu
 
 var slideout = new Slideout({
     'panel': document.getElementById('panel'),
@@ -14,7 +14,7 @@ document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
 });
 
-
+// form submission
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
 
@@ -86,7 +86,7 @@ const cols = Math.floor(w / 20) + 1;
 const ypos = Array(cols).fill(0);
 
 // Words to display
-const words = ["ChrisDayPro", "Developer"];
+const words = ["Chris Day", "Developer", "Designer", "Father"];
 
 ctx.fillStyle = '#000';
 ctx.fillRect(0, 0, w, h);
@@ -96,21 +96,21 @@ function matrix () {
     ctx.fillRect(0, 0, w, h);
 
     ctx.fillStyle = '#0f0';
-    ctx.font = '15pt monospace';
+    ctx.font = '25pt monospace';
 
     ypos.forEach((y, ind) => {
         const word = words[Math.floor(Math.random() * words.length)];
-        const x = ind * 20;
+        const x = ind * 50;
 
         ctx.fillText(word, x, y);
 
         if (y > h) { 
-            ypos[ind] = -Math.random() * 100; 
+            ypos[ind] = -Math.random() * 1000; 
         } else {
-            ypos[ind] = y + 20;
+            ypos[ind] = y + 25;
         }
     });
 }
 
-setInterval(matrix, 50);
+setInterval(matrix, 170);
 

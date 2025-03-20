@@ -7,8 +7,8 @@ aside {
     flex-direction: column;
     margin-left: 0;
     align-items: center;
-    border-right: 4px solid var(--red-c);
-    background-color: #8890c6;
+    border-right: 4px solid #0f0;
+    background-color: #7d7e80;
     position: fixed;
     max-width: 200px;
     height: 100vh;
@@ -17,7 +17,7 @@ aside {
     
     h1 {
         font-size: 6rem;
-        border-bottom: 4px solid var(--red-c); 
+        border-bottom: 4px solid #0f0; 
         max-width: 200px;
         padding: 30%;
         margin: 0;
@@ -38,18 +38,19 @@ aside {
     a {
         text-decoration: none;
         color: rgb(61, 61, 61);
+
         &:hover {
-            color: var(--line-color);
+            color: #0f0;
+            transition: color 0.5s ease-in-out;
             text-decoration: none;
         }
     }
     i {
-        color: var(--line-color);
+        color: #0f0;
     }
     .contact-me {
         display: flex;
-        
-        border-top: 4px solid var(--red-c);
+        border-top: 4px solid #0f0;
         width: 200px;
         padding-top: 20px;
         padding-left: 45px;

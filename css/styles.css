@@ -13,8 +13,8 @@ aside {
   flex-direction: column;
   margin-left: 0;
   align-items: center;
-  border-right: 4px solid var(--red-c);
-  background-color: #8890c6;
+  border-right: 4px solid #0f0;
+  background-color: #7d7e80;
   position: fixed;
   max-width: 200px;
   height: 100vh;
@@ -124,7 +124,7 @@ aside {
 }
 aside h1 {
   font-size: 6rem;
-  border-bottom: 4px solid var(--red-c);
+  border-bottom: 4px solid #0f0;
   max-width: 200px;
   padding: 30%;
   margin: 0;
@@ -147,15 +147,16 @@ aside a {
   color: rgb(61, 61, 61);
 }
 aside a:hover {
-  color: var(--line-color);
+  color: #0f0;
+  transition: color 0.5s ease-in-out;
   text-decoration: none;
 }
 aside i {
-  color: var(--line-color);
+  color: #0f0;
 }
 aside .contact-me {
   display: flex;
-  border-top: 4px solid var(--red-c);
+  border-top: 4px solid #0f0;
   width: 200px;
   padding-top: 20px;
   padding-left: 45px;
@@ -202,14 +203,12 @@ main {
   max-width: 100%;
   width: 98%;
   padding: 20px;
-  background-color: #ccc;
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
-  background-color: #ccc;
 }
 @media (min-width: 576px) {
   .main-grid footer {
@@ -323,11 +322,11 @@ main {
   flex-direction: column;
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #8890c6;
+  border: 1px solid #0f0;
+  background-color: rgb(119, 248, 119);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.7s ease-in-out;
 }
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
@@ -354,10 +353,10 @@ main {
 
 html, body {
   scroll-behavior: smooth;
-  background-color: #ccc;
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: rgb(61, 61, 61);
 }
 
 :root {
@@ -777,6 +776,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: rgb(61, 61, 61);
 }
 @media (min-width: 576px) {
   .container footer, .container-inner footer {

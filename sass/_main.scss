@@ -5,14 +5,12 @@ main {
     max-width: 100%;
     width: 98%;
     padding: 20px;
-    background-color: #ccc;
 }
 
 .main-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 15px;
-    background-color: #ccc;
     @include m.responsive;
 }
 
@@ -25,11 +23,11 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #8890c6;
+    border: 1px solid #0f0;
+    background-color: rgb(119, 248, 119);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.7s ease-in-out;
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)inset;
     }

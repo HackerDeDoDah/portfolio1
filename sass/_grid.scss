@@ -5,5 +5,6 @@
     flex-direction: column;
     width: 100%;
     @include m.responsive;
+    background-color: rgb(61, 61, 61);
 }
 
