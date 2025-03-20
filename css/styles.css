@@ -95,7 +95,7 @@ aside {
     gap: 10px;
   }
   aside .main-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit);
     margin-left: 200px;
     margin-top: 50px;
     width: 90%;
@@ -208,7 +208,7 @@ main {
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 15px;
   background-color: #ccc;
 }
 @media (min-width: 576px) {
@@ -286,7 +286,7 @@ main {
     gap: 10px;
   }
   .main-grid .main-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit);
     margin-left: 200px;
     margin-top: 50px;
     width: 90%;
@@ -414,7 +414,7 @@ footer {
 canvas {
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .text-container {
@@ -535,7 +535,7 @@ canvas {
     gap: 10px;
   }
   .hero-container .main-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit);
     margin-left: 200px;
     margin-top: 50px;
     width: 90%;
@@ -853,7 +853,7 @@ button:hover {
     gap: 10px;
   }
   .container .main-grid, .container-inner .main-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit);
     margin-left: 200px;
     margin-top: 50px;
     width: 90%;

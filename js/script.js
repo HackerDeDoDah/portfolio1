@@ -21,10 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const firstName = document.getElementById('first-name');
-        const lastName = document.getElementById('last-name');
+        const name = document.getElementById('name');
         const email = document.getElementById('email');
-        const subject = document.getElementById('subject');
+        const company = document.getElementById('company');
         const message = document.getElementById('message');
 
         let isValid = true;
@@ -32,14 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const errorElements = form.querySelectorAll('.error');
         errorElements.forEach(el => el.remove());
 
-        if (!firstName.value.trim()) {
+        if (!name.value.trim()) {
             isValid = false;
-            showError(firstName, 'First name is required.');
-        }
-
-        if (!lastName.value.trim()) {
-            isValid = false;
-            showError(lastName, 'Last name is required.');
+            showError(name, 'Your name is required.');
         }
 
         if (!validateEmail(email.value.trim())) {
@@ -47,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
             showError(email, 'Please enter a valid email address.');
         }
 
-        if (!subject.value.trim()) {
+        if (!company.value.trim()) {
             isValid = false;
-            showError(subject, 'Subject is required.');
+            showError(company, 'Company is required.');
         }
 
         if (!message.value.trim()) {
@@ -74,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^(?!test@test$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailPattern.test(email);
     }
 });

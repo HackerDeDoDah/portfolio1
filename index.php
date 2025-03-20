@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+<?php
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$dbHost = $_ENV['DB_HOST'] ?? 'localhost';
+$dbUser = $_ENV['DB_USER'] ?? 'root';
+$dbPass = $_ENV['DB_PASS'] ?? '';
+?>
+
     <?php
     include 'header.php';
     ?>
@@ -42,7 +54,7 @@
                     <div class="card">
                         <img src="assets/Screenshot 2025-01-15 105926.png" alt="">
                         <h2>Project 2</h2>
-                        <p>Random picture generator</p>
+                        <p>A Random picture generator for the Scion Program assignment.</p>
                         <a href="http://js-array.christopher-day.netmatters-scs.co.uk/" target="_blank">View here.<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                     <div class="card">
