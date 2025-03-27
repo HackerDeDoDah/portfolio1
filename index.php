@@ -19,8 +19,8 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $dbHost = $_ENV['DB_HOST'] ?? 'localhost';
-$dbUser = $_ENV['DB_USER'] ?? 'root';
-$dbPass = $_ENV['DB_PASS'] ?? '';
+$dbUser = $_ENV['DB_USER'] ?? 'christopherday_christopherday';
+$dbPass = $_ENV['DB_PASS'] ?? 'P.w^AWF6W=96';
 ?>
 
     <?php

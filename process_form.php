@@ -5,9 +5,9 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';  // PHPMailer autoload
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "form_data";
+$username = "christopherday";
+$password = "P.w^AWF6W=96";
+$database = "christopherday_portfolio";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
